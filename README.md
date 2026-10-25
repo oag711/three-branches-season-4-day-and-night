@@ -39,3 +39,27 @@ Test the connection with:
 ```console
 python -m sandbox llm
 ```
+
+Design Goal
+
+My goal for this project was to make the villagers have different jobs and routines throughout the day. I wanted each villager to have a specific place to go so that the village would feel more active and organized. For example, some villagers work at the pump, benches, crops, or crates, while other villagers visit different areas.
+
+I also wanted the villagers to move around the village without getting stuck. To do this, I created a pathfinding system that searches for a route to each villager's target. I wanted the villagers to respond to the time of day by going to work, taking breaks, or heading home at night. I also added waving so the villagers could react when they see other people.
+
+Design Reflection
+
+One of the main challenges was making the villagers move to their correct destinations. I used a grid-based pathfinding system that checks nearby cells and finds a route toward the target. I also added a system that can rebuild a route if the villager has trouble moving along it. This helped me understand how pathfinding can be used to control characters in a game.
+
+Another challenge was organizing the villagers' schedules. Each villager has a role, and their target can change depending on the phase of the day. I used conditions to decide where each villager should go during daytime, midday, evening, and night.
+
+I think one strength of my design is that the villagers have different roles instead of all doing the same thing. However, the behavior could still be improved. Some villagers may gather near the same locations, and their routines could be more varied. In the future, I would like to spread the villagers out more, improve their daily schedules, and add conversations so they can tell each other what they are doing.
+
+Overall, this project helped me understand how to use Python, conditions, functions, and pathfinding to create behavior for game characters.
+
+AI-Use Disclosure and Reflection
+
+I used ChatGPT to help me understand my code and work through programming problems. I used it as a tool to help explain ideas such as pathfinding, villager roles, and how the villagers change their behavior during different parts of the day.
+
+Using AI helped me understand some programming concepts that were difficult for me at first. It also helped me identify possible problems and think about ways to improve the villagers' behavior. However, AI-generated suggestions still need to be checked because a solution may not work exactly as expected in the game.
+
+This experience showed me that AI can be useful for learning and debugging, but I still need to understand the code, test it, and decide whether the changes improve my project. I used the assistance as a learning tool rather than assuming every suggestion was correct.
